@@ -43,6 +43,7 @@ cacheSolve <- function(x, ...) {
         inverse <- x$getSolve()
         if(!is.null(inverse)) {
                 # cached result is valid so use this
+                message("using cached inverse")
                 return(inverse)
         }
 
